@@ -6,6 +6,8 @@
 /* Primary btn color #F00565 */
 /* Secondary btn color #D104E3 */
 
+/** COMMON STYLES **/
+
 :root {
   --primary-text-color: #000000;
   --secondary-text-color: #ffffff;
@@ -66,6 +68,10 @@ h3 {
   margin: 0;
 }
 
+ul {
+  list-style: disc;
+}
+
 img {
   display: block;
 }
@@ -74,7 +80,7 @@ img {
   font-family: 'RoadkillAlternates';
   font-weight: 400;
   font-size: 40px;
-  color: #ffffff;
+  color: var(--secondary-text-color);
   text-align: center;
   line-height: 1;
   display: inline-block;
@@ -89,12 +95,23 @@ img {
   background-color: var(--primary-btn-color);
 }
 
+/** HEADER SECTION **/
+
 .header {
   background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.about__heading {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 
 .header .container {
@@ -136,6 +153,226 @@ img {
   font-weight: 600;
 }
 
+/** HERO SECTION **/
+
+.hero {
+  background-image: url('/images/slide-1.jpg');
+  background-position: top;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  height: 700px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero__content {
+  position: relative;
+  padding-top: 152px;
+}
+
+.hero__subheading {
+  position: absolute;
+  top: 60%;
+}
+
+.hero .donate-button {
+  margin-top: 163px;
+}
+
+.slider__dots.list {
+  font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 55px;
+}
+
+.slider__dots-item {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: var(--primary-btn-color);
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.slider__dots-item.active {
+  border: 6px solid #000000;
+}
+
+/** ABOUT SECTION **/
+
+.content-box.list {
+  display: flex;
+  padding-top: 120px;
+}
+
+.content-box__list-item:nth-child(1) {
+  margin-right: 94px;
+}
+
+.content-box__list-item {
+  line-height: 1.6;
+}
+
+.content-box__list-item img {
+  padding-top: 31.5px;
+}
+
+.content-box__list-item > p,
+.content-box__list-item > ul {
+  font-weight: 300;
+}
+
+.content-box__list-item b {
+  font-weight: 700;
+}
+
+.about__stats {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about__stats p {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.09;
+}
+
+.about__stats span {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/** ABOUT :: STEPPER **/
+
+.stepper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+/* .stepper-item::before {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid #f00565;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+} */
+
+.stepper__item.last::after {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid #000000;
+  border-radius: 100px;
+  width: 125%;
+
+  top: 15px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper__item .step-counter {
+  color: var(--secondary-text-color);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-text-color);
+  margin-bottom: 6px;
+}
+
+.stepper__item.active {
+  margin-right: 20px;
+  align-items: center;
+}
+
+.stepper__item.completed .step-counter,
+.stepper__item.last .step-counter {
+  background-color: #f00565;
+}
+
+.stepper__item.last {
+  margin-right: 90px;
+}
+
+.stepper__item.last .step-counter {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  bottom: 15px;
+}
+
+.stepper__item.last .step-name {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0.4;
+  color: var(--primary-btn-color);
+}
+
+.stepper__item.completed .step-name,
+.stepper__item.active .step-name {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  opacity: 0.5;
+}
+
+.stepper__item.completed::after,
+.stepper__item.active::after {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid #f00565;
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper__item:first-child::before {
+  content: none;
+}
+.stepper__item:last-child::after {
+  content: '';
+}
+
+/** END STEPPER **/
+
+.about__text-amount {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.about__text-amount span {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 @media screen and (min-width: 480px) {
 }
 
@@ -143,52 +380,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    background-image: url('/images/slide-1.jpg');
-    background-position: bottom;
-    /* background-size: 100%; */
-    background-repeat: no-repeat;
-    height: 700px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  }
-
   .hero .container {
     max-width: 1342px;
+    height: 700px;
   }
 
-  .hero__content {
-    position: relative;
-    padding-top: 152px;
-  }
-
-  .hero__subheading {
-    position: absolute;
-    top: 60%;
-  }
-
-  .hero .donate-button {
-    margin-top: 163px;
-  }
-
-  .slider__dots.list {
-    font-size: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 55px;
-  }
-
-  .slider__dots-item {
-    border: 2px solid #000000;
-    border-radius: 4px;
-    background-color: var(--primary-btn-color);
-    width: 24px;
-    height: 24px;
-    margin: 0 4px;
-    cursor: pointer;
-  }
-
-  .slider__dots-item.active {
-    border: 6px solid #000000;
+  .about .container {
+    max-width: 1087px;
   }
 }
 
