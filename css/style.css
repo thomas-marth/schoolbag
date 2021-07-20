@@ -156,7 +156,7 @@ img {
 /** HERO SECTION **/
 
 .hero {
-  background-image: url('/images/slide-1.jpg');
+  background-image: url('../images/slide-1.jpg');
   background-position: top;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
@@ -405,10 +405,10 @@ img {
 
 @font-face {
   font-family: 'RoadkillAlternates';
-  src: url('/fonts/RoadkillAlternates.eot');
-  src: url('/fonts/RoadkillAlternates.eot') format('embedded-opentype'),
-    url('/fonts/RoadkillAlternates.woff2') format('woff2'),
-    url('/fonts/RoadkillAlternates.woff') format('woff'),
-    url('/fonts/RoadkillAlternates.ttf') format('truetype'),
-    url('/fonts/RoadkillAlternates.svg#RoadkillAlternates') format('svg');
+  src: url('../fonts/RoadkillAlternates.eot');
+  src: url('../fonts/RoadkillAlternates.eot') format('embedded-opentype'),
+    url('../fonts/RoadkillAlternates.woff2') format('woff2'),
+    url('../fonts/RoadkillAlternates.woff') format('woff'),
+    url('../fonts/RoadkillAlternates.ttf') format('truetype'),
+    url('../fonts/RoadkillAlternates.svg#RoadkillAlternates') format('svg');
 }
