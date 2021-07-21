@@ -591,14 +591,20 @@ p.about__text-amount {
 
   .school-sets__third-wrapper .container {
     max-width: 1342px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .school-sets__fourth-wrapper .container {
     max-width: 1342px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .school-sets__fifth-wrapper .container {
     max-width: 1342px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
