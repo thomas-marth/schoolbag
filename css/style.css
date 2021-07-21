@@ -87,17 +87,18 @@ img {
   display: inline-block;
   height: 56px;
   margin: 0 auto;
-  padding: 8px 32px 8px 32px;
   border: none;
   border-radius: 4px;
 }
 
 .donate-button {
   background-color: var(--primary-btn-color);
+  padding: 8px 32px 8px 32px;
 }
 
 .bring-button {
   background-color: var(--secondary-btn-color);
+  padding: 8px 24px 8px 24px;
 }
 
 /** HEADER SECTION **/
@@ -424,7 +425,7 @@ p.about__text-amount {
   line-height: 1;
 }
 
-/** SCHOOL-SETS SECTION **/
+/** SCHOOL-SETS SECTION 1 **/
 
 .school-sets__first-wrapper {
   background-color: var(--secondary-bg-color);
@@ -547,6 +548,20 @@ p.about__text-amount {
   margin-right: 32px;
 }
 
+/** SCHOOL-SETS SECTION 2 **/
+
+.school-sets__second-wrapper {
+  background-color: var(--third-bg-color);
+}
+
+.school-sets__second-wrapper .school-sets__content-box {
+  flex-direction: row-reverse;
+}
+
+.school-sets__second-wrapper .school-sets__image {
+  margin-right: 32px;
+}
+
 @media screen and (min-width: 480px) {
 }
 
@@ -556,7 +571,6 @@ p.about__text-amount {
 @media screen and (min-width: 1200px) {
   .hero .container {
     max-width: 1342px;
-    height: 700px;
   }
 
   .about .container {
@@ -570,11 +584,9 @@ p.about__text-amount {
   }
 
   .school-sets__second-wrapper .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     max-width: 1342px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .school-sets__third-wrapper .container {
@@ -594,7 +606,8 @@ p.about__text-amount {
   font-family: 'RoadkillAlternates';
   src: url('../fonts/RoadkillAlternates.eot');
   src: url('../fonts/RoadkillAlternates.eot') format('embedded-opentype'),
-    url('../fonts/RoadkillAlternates.woff2') format('woff2'), url('../fonts/RoadkillAlternates.woff') format('woff'),
+    url('../fonts/RoadkillAlternates.woff2') format('woff2'),
+    url('../fonts/RoadkillAlternates.woff') format('woff'),
     url('../fonts/RoadkillAlternates.ttf') format('truetype'),
     url('../fonts/RoadkillAlternates.svg#RoadkillAlternates') format('svg');
 }
