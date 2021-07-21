@@ -562,6 +562,30 @@ p.about__text-amount {
   margin-right: 32px;
 }
 
+/** SCHOOL-SETS SECTION 4 **/
+
+.school-sets__fourth-wrapper {
+  background-color: var(--secondary-bg-color);
+}
+
+.school-sets__fourth-wrapper .school-sets__content-box {
+  flex-direction: row-reverse;
+}
+
+.school-sets__fourth-wrapper .school-sets__image {
+  margin-right: 32px;
+}
+
+/** SCHOOL-SETS SECTION 5 **/
+
+.school-sets__fifth-wrapper {
+  background-color: var(--third-bg-color);
+}
+
+.school-sets__fifth-wrapper .school-sets__text--left {
+  margin-right: 197px;
+}
+
 @media screen and (min-width: 480px) {
 }
 
