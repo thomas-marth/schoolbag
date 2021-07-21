@@ -396,8 +396,8 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.school-sets__header {
-  margin: 0 auto;
+.school-sets__quote {
+  margin: 0 auto 32px;
 }
 
 @media screen and (min-width: 480px) {
