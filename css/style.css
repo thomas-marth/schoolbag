@@ -390,6 +390,16 @@ img {
   line-height: 1;
 }
 
+/** SCHOOL-SETS SECTION **/
+
+.school-sets__first-wrapper {
+  background-color: var(--secondary-bg-color);
+}
+
+.school-sets__header {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
 }
 
@@ -404,6 +414,27 @@ img {
 
   .about .container {
     max-width: 1117px;
+  }
+
+  .school-sets .container {
+    max-width: 1342px;
+    padding: 48px 0;
+  }
+
+  .school-sets__second-wrapper .container {
+    max-width: 1342px;
+  }
+
+  .school-sets__third-wrapper .container {
+    max-width: 1342px;
+  }
+
+  .school-sets__fourth-wrapper .container {
+    max-width: 1342px;
+  }
+
+  .school-sets__fifth-wrapper .container {
+    max-width: 1342px;
   }
 }
 
