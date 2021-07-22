@@ -558,6 +558,10 @@ p.about__text-amount {
   flex-direction: row-reverse;
 }
 
+.school-sets__second-wrapper .target > .step-name {
+  margin-right: 0;
+}
+
 .school-sets__second-wrapper .school-sets__image {
   margin-right: 32px;
 }
@@ -572,6 +576,10 @@ p.about__text-amount {
   flex-direction: row-reverse;
 }
 
+.school-sets__fourth-wrapper .target > .step-name {
+  margin-right: 0;
+}
+
 .school-sets__fourth-wrapper .school-sets__image {
   margin-right: 32px;
 }
@@ -580,6 +588,10 @@ p.about__text-amount {
 
 .school-sets__fifth-wrapper {
   background-color: var(--third-bg-color);
+}
+
+.school-sets__fifth-wrapper .target > .step-name {
+  margin-right: 0;
 }
 
 .school-sets__fifth-wrapper .school-sets__text--left {
