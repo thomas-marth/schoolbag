@@ -218,6 +218,10 @@ img {
   padding: 0;
 }
 
+.custom-list li {
+  margin-left: 5px;
+}
+
 .custom-list li::before {
   content: '';
   display: inline-block;
@@ -263,7 +267,7 @@ img {
 
 .about__stats {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .about__stats p {
@@ -469,7 +473,7 @@ p.about__text-amount {
 }
 
 .custom-list li {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 /** SCHOOL-SETS :: STEPPERS */
