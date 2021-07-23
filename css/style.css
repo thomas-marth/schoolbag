@@ -18,6 +18,13 @@
   --secondary-btn-color: #d104e3;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -442,11 +449,6 @@ p.about__text-amount {
   margin-right: 59px;
 }
 
-.schoolbag-img {
-  /* max-width: 100%;
-  height: auto; */
-}
-
 /** SCHOOL-SETS :: STEPPERS */
 
 .school-sets__description .stepper {
@@ -594,7 +596,7 @@ p.about__text-amount {
   margin-top: 40px;
 }
 
-.locations__stats p {
+.locations__stats-title {
   font-family: 'Raleway', 'Segoe UI', sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -602,7 +604,7 @@ p.about__text-amount {
   margin-bottom: 32px;
 }
 
-.locations__stats span {
+.locations__stats-title span {
   font-family: 'Raleway', 'Segoe UI', sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -759,6 +761,86 @@ p.about__text-amount {
   .locations .container {
     max-width: 1118px;
   }
+
+  .reception-points h2 {
+    font-family: 'Raleway', 'Segoe UI', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    margin-top: 92px;
+    margin-bottom: 15px;
+  }
+
+  .reception-points__list {
+    display: flex;
+  }
+
+  .reception-points__thumb img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .reception-points__card {
+    margin-bottom: 40px;
+  }
+
+  .reception-points__card:first-child {
+    margin-right: 32px;
+  }
+
+  .reception-points__adress {
+    background-color: var(--secondary-text-color);
+    text-align: left;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .reception-points__adress p {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .adress__list-icon--map {
+    width: 27px;
+    height: 28px;
+    margin: 0 8px 0 0;
+  }
+
+  .adress__list-icon--time {
+    width: 24px;
+    height: 28px;
+    margin: 0 8px 0 0;
+  }
+
+  .adress__list-icon--mobile {
+    width: 15px;
+    height: 28px;
+    margin: 0 8px 0 0;
+  }
+
+  .adress__list.list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adress__list-item:nth-child(2n) {
+    margin: 10px 0;
+  }
+
+  .adress__list-item {
+    justify-content: flex-start;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* .icon-test {
+    background-image: url(./images/sprite.svg#icon-map);
+  } */
 }
 
 @font-face {
