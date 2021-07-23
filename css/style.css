@@ -25,10 +25,8 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  /* letter-spacing: 0.03em; */
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 80px; */
 }
 
 .visually-hidden {
@@ -57,10 +55,9 @@ a {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 h1,
@@ -111,52 +108,10 @@ img {
   width: 100%;
 }
 
-.about__heading {
-  font-family: 'Raleway', 'Segoe UI', sans-serif;
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1.14;
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-}
-
 .header .container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 0;
   z-index: 1;
-}
-
-.header__logo {
-  margin: 0 18px;
-}
-
-.navigation-left__list {
-  display: flex;
-  justify-content: end;
-}
-
-.navigation-left__list .navigation__list-item {
-  margin-right: 32px;
-}
-
-.navigation-right__list {
-  display: flex;
-  justify-content: start;
-}
-
-.navigation-right__list .navigation__list-item {
-  margin-left: 32px;
-}
-
-.navigation__list-item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  line-height: 1.17;
-  font-weight: 600;
 }
 
 /** HERO SECTION **/
@@ -165,7 +120,6 @@ img {
   background-image: url('../images/slide-1.jpg');
   background-position: top;
   background-repeat: no-repeat;
-  height: 700px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -206,9 +160,18 @@ img {
 
 /** ABOUT SECTION **/
 
-.content-box.list {
+.about__content-wrapper.list {
   display: flex;
   padding-top: 120px;
+}
+
+.about__heading {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 
 .custom-list {
@@ -219,6 +182,7 @@ img {
 
 .custom-list li {
   margin-left: 5px;
+  margin-bottom: 8px;
 }
 
 .custom-list li::before {
@@ -232,35 +196,35 @@ img {
   margin-right: 13px;
 }
 
-.content-box__list-item:nth-child(1) {
+.about__content-item:nth-child(1) {
   margin-left: 61px;
   margin-right: 94px;
 }
 
-.content-box__list-item {
+.about__content-item {
   line-height: 1.6;
 }
 
-.content-box__list-item img {
+.about__content-item img {
   padding-top: 31.5px;
 }
 
-.content-box__list-item > p,
-.content-box__list-item > ul {
+.about__content-item > p,
+.about__content-item > ul {
   font-weight: 300;
   max-width: 625px;
 }
 
-.content-box__list-item > p {
+.about__content-item > p {
   margin-top: 16px;
   margin-bottom: 30px;
 }
 
-.content-box__list-item > ul {
+.about__content-item > ul {
   margin-left: 10px;
 }
 
-.content-box__list-item b {
+.about__content-item b {
   font-weight: 700;
 }
 
@@ -315,7 +279,7 @@ img {
   margin-left: 20px;
 }
 
-.stepper__item .step-icon {
+.stepper__item .stepper__icon {
   color: var(--secondary-text-color);
   position: relative;
   z-index: 5;
@@ -334,8 +298,8 @@ img {
   align-items: center;
 }
 
-.stepper__item.completed .step-icon,
-.stepper__item.last .step-icon {
+.stepper__item.completed .stepper__icon,
+.stepper__item.last .stepper__icon {
   background-color: #f00565;
   margin-left: 4px;
 }
@@ -344,7 +308,7 @@ img {
   margin-right: 165px;
 }
 
-.stepper__item.last .step-icon {
+.stepper__item.last .stepper__icon {
   position: relative;
   width: 64px;
   height: 64px;
@@ -352,7 +316,7 @@ img {
   margin-left: 15px;
 }
 
-.step-icon svg {
+.stepper__icon svg {
   fill: #ffffff;
   width: 18px;
   height: 13.4px;
@@ -364,8 +328,8 @@ img {
   height: 36px;
 }
 
-.stepper__item.last .step-name,
-.stepper__item.current .step-name {
+.stepper__item.last .stepper__number,
+.stepper__item.current .stepper__number {
   font-family: 'Raleway', 'Segoe UI', sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -373,12 +337,12 @@ img {
   color: var(--primary-btn-color);
 }
 
-.stepper__item.last .step-name {
+.stepper__item.last .stepper__number {
   line-height: 0.4;
 }
 
-.stepper__item.completed .step-name,
-.stepper__item.canceled .step-name {
+.stepper__item.completed .stepper__number,
+.stepper__item.canceled .stepper__number {
   font-family: 'Raleway', 'Segoe UI', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -387,7 +351,7 @@ img {
   opacity: 0.5;
 }
 
-.stepper__item.canceled .step-name {
+.stepper__item.canceled .stepper__number {
   width: 105px;
 }
 
@@ -434,12 +398,19 @@ p.about__text-amount {
   background-color: var(--secondary-bg-color);
 }
 
+.school-sets__first-wrapper .school-sets__content-box {
+  padding-bottom: 48px;
+}
+
 .school-sets__heading--hide {
   display: none;
 }
 
 .school-sets__quote {
+  max-width: 100%;
+  height: auto;
   margin: 0 auto 32px;
+  padding-top: 48px;
 }
 
 .school-sets__heading {
@@ -471,6 +442,11 @@ p.about__text-amount {
   margin-right: 59px;
 }
 
+.schoolbag-img {
+  /* max-width: 100%;
+  height: auto; */
+}
+
 /** SCHOOL-SETS :: STEPPERS */
 
 .school-sets__description .stepper {
@@ -478,8 +454,8 @@ p.about__text-amount {
   justify-content: space-between;
 }
 
-.stepper__item.initial .step-name,
-.stepper__item.target .step-name {
+.stepper__item.initial .stepper__number,
+.stepper__item.target .stepper__number {
   font-family: 'Raleway', 'Segoe UI', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -488,19 +464,19 @@ p.about__text-amount {
   opacity: 0.5;
 }
 
-.stepper__item.initial .step-name {
+.stepper__item.initial .stepper__number {
   margin-left: 10px;
 }
 
-.stepper__item.target .step-name {
+.stepper__item.target .stepper__number {
   margin-right: 4px;
 }
 
-.stepper__item.initial .step-icon {
+.stepper__item.initial .stepper__icon {
   background-color: var(--primary-btn-color);
 }
 
-.stepper__item.current .step-icon {
+.stepper__item.current .stepper__icon {
   position: relative;
   width: 64px;
   height: 64px;
@@ -555,14 +531,21 @@ p.about__text-amount {
 
 .school-sets__second-wrapper .school-sets__content-box {
   flex-direction: row-reverse;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
-.school-sets__second-wrapper .target > .step-name {
+.school-sets__second-wrapper .target > .stepper__number {
   margin-right: 0;
 }
 
 .school-sets__second-wrapper .school-sets__image {
   margin-right: 32px;
+}
+
+.school-sets__third-wrapper .school-sets__content-box {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /** SCHOOL-SETS SECTION 4 **/
@@ -573,9 +556,11 @@ p.about__text-amount {
 
 .school-sets__fourth-wrapper .school-sets__content-box {
   flex-direction: row-reverse;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
-.school-sets__fourth-wrapper .target > .step-name {
+.school-sets__fourth-wrapper .target > .stepper__number {
   margin-right: 0;
 }
 
@@ -589,7 +574,12 @@ p.about__text-amount {
   background-color: var(--third-bg-color);
 }
 
-.school-sets__fifth-wrapper .target > .step-name {
+.school-sets__fifth-wrapper .school-sets__content-box {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.school-sets__fifth-wrapper .target > .stepper__number {
   margin-right: 0;
 }
 
@@ -597,49 +587,177 @@ p.about__text-amount {
   margin-right: 197px;
 }
 
+/** LOCATIONS SECTION **/
+
+.locations__stats {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.locations__stats p {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.37;
+  margin-bottom: 32px;
+}
+
+.locations__stats span {
+  font-family: 'Raleway', 'Segoe UI', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.locations__stats .stepper {
+  display: flex;
+  justify-content: space-between;
+}
+.locations__stats .stepper.list {
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.locations__stats .stepper__item.current {
+  margin-left: 20px;
+}
+
+.locations__stats .stepper__item.target {
+  margin: 0 auto;
+}
+
+.locations__stats .stepper__item.target .stepper__number {
+  margin-right: 0;
+}
+
 @media screen and (min-width: 480px) {
 }
 
 @media screen and (min-width: 768px) {
+  /* .header .container {
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+  }
+
+  .header__logo {
+    margin: 0 18px;
+  }
+
+  .navigation-left__list {
+    display: flex;
+    justify-content: end;
+  }
+
+  .navigation-left__list .navigation__list-item {
+    margin-right: 32px;
+  }
+
+  .navigation-right__list {
+    display: flex;
+    justify-content: start;
+  }
+
+  .navigation-right__list .navigation__list-item {
+    margin-left: 32px;
+  }
+
+  .navigation__list-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 600;
+  } */
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /** HEADER SECTION (DESK) **/
+
+  .header .container {
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+  }
+
+  .header__logo {
+    margin: 0 18px;
+  }
+
+  .navigation-left__list {
+    display: flex;
+    justify-content: end;
+  }
+
+  .navigation-left__list .navigation__list-item {
+    margin-right: 32px;
+  }
+
+  .navigation-right__list {
+    display: flex;
+    justify-content: start;
+  }
+
+  .navigation-right__list .navigation__list-item {
+    margin-left: 32px;
+  }
+
+  .navigation__list-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 600;
+  }
+
+  /** HERO SECTION (DESK) **/
+
   .hero .container {
     max-width: 1342px;
   }
 
-  .about .container {
-    max-width: 1117px;
+  .hero {
+    background-image: url('../images/slide-1.jpg');
+    background-position: top;
+    height: 700px;
   }
+
+  /** ABOUT SECTION (DESK) **/
+
+  .about .container {
+    max-width: 1118px;
+  }
+
+  /** SCHOOL-SETS SECTION (DESK) **/
 
   .school-sets__first-wrapper .container {
     max-width: 1342px;
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .school-sets__second-wrapper .container {
     max-width: 1342px;
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .school-sets__third-wrapper .container {
     max-width: 1342px;
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .school-sets__fourth-wrapper .container {
     max-width: 1342px;
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .school-sets__fifth-wrapper .container {
     max-width: 1342px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+  }
+
+  /** LOCATIONS SECTION (DESK) **/
+
+  .locations .container {
+    max-width: 1118px;
   }
 }
 
