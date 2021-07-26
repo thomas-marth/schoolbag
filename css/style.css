@@ -825,7 +825,7 @@ p.about__text-amount {
     max-width: 864px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 72px;
+    padding-top: 72px;
   }
   .social-wrapper .section-title {
     margin-bottom: 13px;
