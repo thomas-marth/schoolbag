@@ -768,10 +768,6 @@ p.about__text-amount {
     border-radius: 10px 10px 0px 0px;
   }
 
-  .reception-points__card {
-    margin-bottom: 72px;
-  }
-
   .reception-points__card:first-child {
     margin-right: 32px;
   }
@@ -829,6 +825,7 @@ p.about__text-amount {
     max-width: 864px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 72px;
   }
   .social-wrapper .section-title {
     margin-bottom: 13px;
