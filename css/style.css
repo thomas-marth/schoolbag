@@ -169,7 +169,6 @@ img {
 
 .about__content-wrapper.list {
   display: flex;
-  padding-top: 120px;
 }
 
 .section-title {
@@ -389,7 +388,6 @@ p.about__text-amount {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 25px;
-  margin-bottom: 40px;
 }
 
 .about__text-amount span {
@@ -405,10 +403,6 @@ p.about__text-amount {
   background-color: var(--secondary-bg-color);
 }
 
-.school-sets__first-wrapper .school-sets__content-box {
-  padding-bottom: 48px;
-}
-
 .school-sets__heading--hide {
   display: none;
 }
@@ -417,7 +411,6 @@ p.about__text-amount {
   max-width: 100%;
   height: auto;
   margin: 0 auto 32px;
-  padding-top: 48px;
 }
 
 .school-sets__heading {
@@ -533,8 +526,6 @@ p.about__text-amount {
 
 .school-sets__second-wrapper .school-sets__content-box {
   flex-direction: row-reverse;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .school-sets__second-wrapper .target > .stepper__number {
@@ -545,11 +536,6 @@ p.about__text-amount {
   margin-right: 32px;
 }
 
-.school-sets__third-wrapper .school-sets__content-box {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 /** SCHOOL-SETS SECTION 4 **/
 
 .school-sets__fourth-wrapper {
@@ -558,8 +544,6 @@ p.about__text-amount {
 
 .school-sets__fourth-wrapper .school-sets__content-box {
   flex-direction: row-reverse;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .school-sets__fourth-wrapper .target > .stepper__number {
@@ -576,11 +560,6 @@ p.about__text-amount {
   background-color: var(--third-bg-color);
 }
 
-.school-sets__fifth-wrapper .school-sets__content-box {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 .school-sets__fifth-wrapper .target > .stepper__number {
   margin-right: 0;
 }
@@ -593,7 +572,6 @@ p.about__text-amount {
 
 .locations__stats {
   text-align: center;
-  margin-top: 40px;
 }
 
 .locations__stats-title {
@@ -730,11 +708,21 @@ p.about__text-amount {
 
   /** ABOUT SECTION (DESK) **/
 
+  .about {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
   .about .container {
     max-width: 1118px;
   }
 
   /** SCHOOL-SETS SECTION (DESK) **/
+
+  .school-set {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 
   .school-sets__first-wrapper .container {
     max-width: 1342px;
@@ -757,6 +745,11 @@ p.about__text-amount {
   }
 
   /** LOCATIONS SECTION (DESK) **/
+
+  .locations {
+    padding-top: 40px;
+    padding-bottom: 72px;
+  }
 
   .locations .container {
     max-width: 1118px;
@@ -835,7 +828,6 @@ p.about__text-amount {
   .social-wrapper {
     max-width: 864px;
     margin: 0 auto;
-    padding-bottom: 72px;
     text-align: center;
   }
   .social-wrapper .section-title {
@@ -912,6 +904,22 @@ p.about__text-amount {
     width: 26px;
     height: 27px;
     margin-top: 17px;
+  }
+
+  /** BLOG SECTION (DESK) **/
+
+  .gallery .container {
+    max-width: 1470px;
+  }
+
+  .gallery__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery__list-item {
+    margin-bottom: 5px;
   }
 }
 
