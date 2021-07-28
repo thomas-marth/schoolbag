@@ -28,6 +28,23 @@
 
     <header class="header">
       <div class="container">
+        <nav class="mobile-navigation">
+          <div>
+            <a href="./">
+              <img
+                src="./images/mobile-logo.png"
+                class="header__logo"
+                alt="Лого Шкільний портфель"
+              />
+            </a>
+          </div>
+
+          <div class="burger-btn">
+            <svg class="burger-icon">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </div>
+        </nav>
         <nav class="desktop-navigation">
           <div class="navigation-left">
             <ul class="navigation-left__list list">
@@ -68,6 +85,15 @@
 
       <section class="hero">
         <div class="container">
+          <div class="hero__content--mobile">
+            <img
+              src="./images/cta-mobile.png"
+              alt="Подаруємо дітям радість від навчання"
+              class="hero__heading--mobile"
+            />
+            <a href="#" class="donate-button btn"> Пожертвувати </a>
+          </div>
+
           <div class="hero__content">
             <img
               src="./images/hero-text1.png"
@@ -79,12 +105,7 @@
               alt="Благодійний фонд Турбота про місто"
               class="hero__subheading"
             />
-            <a href="#" class="donate-button btn">
-              Пожертвувати
-              <!-- <svg class="donate-text">
-                <use href="./images/donate-text.svg"></use>
-              </svg> -->
-            </a>
+            <a href="#" class="donate-button btn"> Пожертвувати </a>
           </div>
           <ul class="slider__dots list">
             <li>
@@ -192,7 +213,10 @@
                   2020 <br />
                   карантин :(
                 </span>
+                <span class="stepper__number--mobile"> 2020 </span>
               </li>
+              <li class="stepper__item completed hidden"></li>
+
               <li class="stepper__item last">
                 <div class="stepper__icon">
                   <svg>
@@ -202,8 +226,21 @@
                 <span class="stepper__number">2021</span>
               </li>
             </ul>
+
+            <div class="stepper__item last--mobile">
+              <div class="stepper__icon">
+                <svg>
+                  <use href="./images/sprite.svg#icon-Backpack"></use>
+                </svg>
+              </div>
+              <span class="stepper__number">2021</span>
+            </div>
             <p class="about__text-amount">
               За 6 років ми змогли зібрати та подарувати дітям
+              <span>2250</span> рюкзаків.
+            </p>
+            <p class="about__text-amount--mobile">
+              За 6 років ми змогли зібрати та подарувати дітям<br />
               <span>2250</span> рюкзаків.
             </p>
           </div>
@@ -226,10 +263,21 @@
               країни, а значить і історію світу"
               class="school-sets__quote"
             />
+            <img
+              src="./images/quote-mobile.png"
+              alt="Виховуючи дітей, нинішні батьки виховують майбутню історію нашої
+              країни, а значить і історію світу"
+              class="school-sets__quote--mobile"
+            />
 
             <ul class="school-sets__content-box list">
               <li class="school-sets__description">
                 <h3 class="school-sets__heading">Набiр шкiльного приладдя для дитини 1-2 класу</h3>
+                <img
+                  src="./images/schoolbag-1m.png"
+                  alt="Шкільний портфель №1 - фото"
+                  class="schoolbag-img--mobile"
+                />
                 <ul class="stepper list">
                   <li class="stepper__item initial">
                     <div class="stepper__icon"></div>
@@ -307,6 +355,11 @@
                 <h3 class="school-sets__heading">
                   Рюкзак + мiнiмальний набiр шкiльного приладдя для дитини 1-2 класу
                 </h3>
+                <img
+                  src="./images/schoolbag-2m.png"
+                  alt="Шкільний портфель №2 - фото"
+                  class="schoolbag-img--mobile"
+                />
                 <ul class="stepper list">
                   <li class="stepper__item initial">
                     <div class="stepper__icon"></div>
@@ -364,7 +417,7 @@
               <li class="school-sets__image">
                 <img
                   src="./images/schoolbag-2.png"
-                  alt="Шкільний портфель №1 - фото"
+                  alt="Шкільний портфель №2 - фото"
                   class="schoolbag-img"
                 />
               </li>
@@ -379,6 +432,11 @@
             <ul class="school-sets__content-box list">
               <li class="school-sets__description">
                 <h3 class="school-sets__heading">Набiр шкiльного приладдя для дитини 3-5 класу</h3>
+                <img
+                  src="./images/schoolbag-3m.png"
+                  alt="Шкільний портфель №3 - фото"
+                  class="schoolbag-img--mobile"
+                />
                 <ul class="stepper list">
                   <li class="stepper__item initial">
                     <div class="stepper__icon"></div>
@@ -444,7 +502,7 @@
               <li class="school-sets__image">
                 <img
                   src="./images/schoolbag-3.png"
-                  alt="Шкільний портфель №1 - фото"
+                  alt="Шкільний портфель №3 - фото"
                   class="schoolbag-img"
                 />
               </li>
@@ -461,6 +519,11 @@
                 <h3 class="school-sets__heading">
                   Рюкзак + мiнiмальний набiр шкiльного приладдя для дитини 3-5 класу
                 </h3>
+                <img
+                  src="./images/schoolbag-4m.png"
+                  alt="Шкільний портфель №4 - фото"
+                  class="schoolbag-img--mobile"
+                />
                 <ul class="stepper list">
                   <li class="stepper__item initial">
                     <div class="stepper__icon"></div>
@@ -472,7 +535,7 @@
                         <use href="./images/sprite.svg#icon-Backpack"></use>
                       </svg>
                     </div>
-                    <span class="stepper__number">47</span>
+                    <span class="stepper__number">37</span>
                   </li>
                   <li class="stepper__item target">
                     <div class="stepper__icon">
@@ -516,7 +579,7 @@
               <li class="school-sets__image">
                 <img
                   src="./images/schoolbag-4.png"
-                  alt="Шкільний портфель №1 - фото"
+                  alt="Шкільний портфель №4 - фото"
                   class="schoolbag-img"
                 />
               </li>
@@ -533,6 +596,12 @@
                 <h3 class="school-sets__heading">
                   Рюкзак + мiнiмальний набiр шкiльного приладдя для дитини зi Схiдної України
                 </h3>
+                <img
+                  src="./images/schoolbag-5m.png"
+                  alt="Шкільний портфель №5 - фото"
+                  class="schoolbag-img--mobile"
+                />
+
                 <ul class="stepper list">
                   <li class="stepper__item initial">
                     <div class="stepper__icon"></div>
@@ -555,6 +624,7 @@
                     <span class="stepper__number">100</span>
                   </li>
                 </ul>
+
                 <ul class="school-sets__text list">
                   <li class="school-sets__text--left">
                     <ul class="custom-list">
@@ -591,7 +661,7 @@
               <li class="school-sets__image">
                 <img
                   src="./images/schoolbag-5.png"
-                  alt="Шкільний портфель №1 - фото"
+                  alt="Шкільний портфель №5 - фото"
                   class="schoolbag-img"
                 />
               </li>
@@ -897,7 +967,7 @@
             <li class="gallery__list-item">
               <picture
                 ><source
-                  srcset="./images/gallery/photo-1m.webp 7x, ./images/gallery/photo-7m@2x.webp 2x"
+                  srcset="./images/gallery/photo-7m.webp 7x, ./images/gallery/photo-7m@2x.webp 2x"
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
@@ -978,10 +1048,27 @@
 
       <!-- DONATE SECTION -->
 
-      <!-- CONTACTS SECTION-->
+      <!-- CONTACTS SECTION -->
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+
+    <footer>
+      <div class="container">
+        <ul class="footer__list list">
+          <li class="footer__list-item">
+            <a href="./"
+              ><img src="./images/logo.png" class="footer__logo" alt="Лого Шкільний портфель"
+            /></a>
+            <p class="copyright">&copy; All Rights Reserved.</p>
+          </li>
+          <li class="policy-links">
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Угода користувача</a>
+            <button type="button">Угору</button>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
