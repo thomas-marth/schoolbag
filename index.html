@@ -28,7 +28,7 @@
 
     <header class="header">
       <div class="container">
-        <nav class="mobile-navigation">
+        <div class="mobile-navigation">
           <div>
             <a href="./">
               <img
@@ -39,12 +39,40 @@
             </a>
           </div>
 
-          <div class="burger-btn">
-            <svg class="burger-icon">
-              <use href="./images/sprite.svg#icon-burger"></use>
+          <button type="button" class="burger-btn" data-menu-button>
+            <svg class="burger-icon" aria-label="Кнопка мобільного меню">
+              <use class="menu-icon" href="./images/sprite.svg#icon-burger"></use>
             </svg>
-          </div>
-        </nav>
+          </button>
+          <button type="button" class="close-btn" data-menu-button>
+            <svg class="close-icon" aria-label="Кнопка закриття мобільного меню">
+              <use class="menu-icon-close" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- <div class="mobile-menu" data-menu>
+          <nav class="nav-mobile">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a href="#about" class="nav-link-mobile current">Про проект</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a href="#participate" class="nav-link-mobile">Взяти участь</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a href="#locations" class="nav-link-mobile">Куди приносити пакунки</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a href="#social" class="nav-link-mobile">Cоц мережі</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a href="#blog" class="nav-link-mobile">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div> -->
+
         <nav class="desktop-navigation">
           <div class="navigation-left">
             <ul class="navigation-left__list list">
