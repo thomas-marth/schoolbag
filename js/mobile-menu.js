@@ -9,7 +9,7 @@
       menuBtnRef.classList.toggle('is-open');
     // menuBtnRef.setAttribute("aria-expanded", !expanded);
     mobileMenuRef.classList.toggle('is-open');
-    // document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
     console.log(mobileMenuRef);
   });
   closeMenuBtn.addEventListener('click', () => {
@@ -18,7 +18,7 @@
       menuBtnRef.classList.toggle('is-open');
     // menuBtnRef.setAttribute("aria-expanded", !expanded);
     mobileMenuRef.classList.toggle('is-open');
-    // document.body.style.overflow = 'visible';
+    document.body.style.overflow = 'visible';
     console.log(mobileMenuRef);
   });
 
@@ -28,7 +28,7 @@
       menuBtnRef.classList.toggle('is-open');
     // menuBtnRef.setAttribute("aria-expanded", !expanded);
     mobileMenuRef.classList.toggle('is-open');
-    // document.body.style.overflow = 'visible';
+    document.body.style.overflow = 'visible';
     console.log(menuBtnRef);
     console.log(mobileMenuRef);
   });
