@@ -39,39 +39,66 @@
             </a>
           </div>
 
-          <button type="button" class="burger-btn" data-menu-button>
+          <button type="button" class="burger-btn" data-menu-button aria-expanded="true">
             <svg class="burger-icon" aria-label="Кнопка мобільного меню">
               <use class="menu-icon" href="./images/sprite.svg#icon-burger"></use>
             </svg>
           </button>
-          <button type="button" class="close-btn" data-menu-button>
+          <button type="button" class="close-btn" data-close-menu-button aria-expanded="false">
             <svg class="close-icon" aria-label="Кнопка закриття мобільного меню">
               <use class="menu-icon-close" href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
         </div>
 
-        <!-- <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" data-menu>
           <nav class="nav-mobile">
-            <ul class="nav-list-mobile">
+            <ul class="nav-list-mobile list">
               <li class="nav-item-mobile">
-                <a href="#about" class="nav-link-mobile current">Про проект</a>
+                <a
+                  href="#about"
+                  class="nav-link-mobile"
+                  data-close-menu-button
+                  aria-expanded="false"
+                  >Про проект</a
+                >
               </li>
               <li class="nav-item-mobile">
-                <a href="#participate" class="nav-link-mobile">Взяти участь</a>
+                <a
+                  href="#participate"
+                  class="nav-link-mobile"
+                  data-close-menu-button
+                  aria-expanded="false"
+                  >Взяти участь</a
+                >
               </li>
               <li class="nav-item-mobile">
-                <a href="#locations" class="nav-link-mobile">Куди приносити пакунки</a>
+                <a
+                  href="#locations"
+                  class="nav-link-mobile"
+                  data-close-menu-button
+                  aria-expanded="false"
+                  >Куди приносити пакунки</a
+                >
               </li>
               <li class="nav-item-mobile">
-                <a href="#social" class="nav-link-mobile">Cоц мережі</a>
+                <a
+                  href="#social"
+                  class="nav-link-mobile"
+                  data-close-menu-button
+                  aria-expanded="false"
+                  >Cоц мережі</a
+                >
               </li>
               <li class="nav-item-mobile">
-                <a href="#blog" class="nav-link-mobile">Блог</a>
+                <a href="#blog" class="nav-link-mobile" data-close-menu-button aria-expanded="false"
+                  >Блог</a
+                >
               </li>
             </ul>
+            <a href="#" class="donate-button btn"> Пожертвувати </a>
           </nav>
-        </div> -->
+        </div>
 
         <nav class="desktop-navigation">
           <div class="navigation-left">
@@ -1098,5 +1125,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
