@@ -4,32 +4,20 @@
   const closeMenuBtn = document.querySelector('[data-close-menu-button]');
   const navLinkMobile = document.querySelector('.nav-list-mobile');
   menuBtnRef.addEventListener('click', () => {
-    const expanded =
-      // menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-      menuBtnRef.classList.toggle('is-open');
-    // menuBtnRef.setAttribute("aria-expanded", !expanded);
+    const expanded = menuBtnRef.classList.toggle('is-open');
     mobileMenuRef.classList.toggle('is-open');
     document.body.style.overflow = 'hidden';
-    console.log(mobileMenuRef);
   });
   closeMenuBtn.addEventListener('click', () => {
-    const expanded =
-      // menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-      menuBtnRef.classList.toggle('is-open');
-    // menuBtnRef.setAttribute("aria-expanded", !expanded);
+    const expanded = menuBtnRef.classList.toggle('is-open');
     mobileMenuRef.classList.toggle('is-open');
     document.body.style.overflow = 'visible';
-    console.log(mobileMenuRef);
   });
 
   navLinkMobile.addEventListener('click', () => {
-    const expanded =
-      // menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-      menuBtnRef.classList.toggle('is-open');
-    // menuBtnRef.setAttribute("aria-expanded", !expanded);
+    const expanded = menuBtnRef.classList.toggle('is-open');
     mobileMenuRef.classList.toggle('is-open');
     document.body.style.overflow = 'visible';
     console.log(menuBtnRef);
-    console.log(mobileMenuRef);
   });
 })();
