@@ -40,7 +40,7 @@
           </div>
 
           <button type="button" class="burger-btn" data-menu-button aria-expanded="true">
-            <svg class="burger-icon" aria-label="Кнопка мобільного меню">
+            <svg class="burger-btn" aria-label="Кнопка мобільного меню">
               <use class="menu-icon" href="./images/sprite.svg#icon-burger"></use>
             </svg>
           </button>
@@ -174,10 +174,33 @@
           </div>
           <ul class="slider__dots list">
             <li>
-              <button type="button" class="slider__dots-item active"></button>
+              <button type="button" class="slider__dots-item first active"></button>
             </li>
-            <li><button type="button" class="slider__dots-item"></button></li>
-            <li><button type="button" class="slider__dots-item"></button></li>
+            <li><button type="button" class="slider__dots-item second"></button></li>
+            <li><button type="button" class="slider__dots-item third"></button></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hero--mobile">
+        <div class="container">
+          <div class="hero__content--mobile">
+            <img
+              src="./images/cta-mobile.png"
+              alt="Подаруємо дітям радість від навчання"
+              class="hero__heading--mobile"
+            />
+            <a href="https://citycare.com.ua/kilo/pay/index.php?type=c" class="donate-button btn">
+              Пожертвувати
+            </a>
+          </div>
+
+          <ul class="slider__dots list">
+            <li>
+              <button type="button" class="slider__dots-item first active"></button>
+            </li>
+            <li><button type="button" class="slider__dots-item second"></button></li>
+            <li><button type="button" class="slider__dots-item third"></button></li>
           </ul>
         </div>
       </section>
@@ -1151,6 +1174,7 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/custom.js"></script>
   </body>
 </html>
