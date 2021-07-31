@@ -1,8 +1,7 @@
 // Desktop slider
+'use strict';
 
 (() => {
-  'use strict';
-
   const firstSliderBtnRef = document.querySelector('.slider__dots-item.first');
   const secondSliderBtnRef = document.querySelector('.slider__dots-item.second');
   const thirdSliderBtnRef = document.querySelector('.slider__dots-item.third');
