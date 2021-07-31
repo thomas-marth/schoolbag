@@ -1,3 +1,5 @@
+// Desktop slider
+
 (() => {
   'use strict';
 
@@ -34,6 +36,8 @@
     sliderHeadingRef.src = './images/hero-text3.png';
   });
 })();
+
+// Mobile slider
 
 (() => {
   const firstSliderBtnRef = document.querySelector('.hero--mobile .slider__dots-item.first');
