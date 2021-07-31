@@ -21,7 +21,7 @@
     thirdSliderBtnRef.classList.remove('active');
     secondSliderBtnRef.classList.add('active');
     sliderRef.style.backgroundImage = "url('./images/slide-2.jpg')";
-    sliderRef.style.backgroundColor = 'var(--secondary-bg-color)';
+    sliderRef.style.backgroundColor = '#1eff63';
     sliderHeadingRef.src = './images/hero-text2.png';
   });
 
@@ -30,7 +30,7 @@
     secondSliderBtnRef.classList.remove('active');
     thirdSliderBtnRef.classList.add('active');
     sliderRef.style.backgroundImage = "url('./images/slide-3.jpg')";
-    sliderRef.style.backgroundColor = 'var(--third-bg-color)';
+    sliderRef.style.backgroundColor = '#18ecf7';
     sliderHeadingRef.src = './images/hero-text3.png';
   });
 })();
@@ -56,7 +56,7 @@
     thirdSliderBtnRef.classList.remove('active');
     secondSliderBtnRef.classList.add('active');
     sliderRef.style.backgroundImage = "url('./images/slide-2m.jpg')";
-    sliderRef.style.backgroundColor = 'var(--secondary-bg-color)';
+    sliderRef.style.backgroundColor = '#1eff63';
     sliderHeadingRef.src = './images/cta-mobile2.png';
   });
 
@@ -65,7 +65,7 @@
     secondSliderBtnRef.classList.remove('active');
     thirdSliderBtnRef.classList.add('active');
     sliderRef.style.backgroundImage = "url('./images/slide-3m.jpg')";
-    sliderRef.style.backgroundColor = 'var(--third-bg-color)';
+    sliderRef.style.backgroundColor = '#18ecf7';
     sliderHeadingRef.src = './images/cta-mobile3.png';
   });
 })();
